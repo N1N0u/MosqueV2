@@ -1,12 +1,11 @@
 package interfaces;
 
-import com.raven.event.EventMenu;
-import com.raven.swing.scrollbar.ScrollBarCustom;
-
-
 import java.awt.Color;
 import java.awt.Component;
 import java.sql.SQLException;
+
+import com.raven.event.EventMenu;
+import com.raven.swing.scrollbar.ScrollBarCustom;
 
 public class Main extends javax.swing.JFrame {
 
@@ -95,7 +94,7 @@ public class Main extends javax.swing.JFrame {
                     .addComponent(scroll, javax.swing.GroupLayout.DEFAULT_SIZE, 1158, Short.MAX_VALUE))
                     .addContainerGap())
             );
-                
+
         panelBackground1Layout.setVerticalGroup(
             panelBackground1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelBackground1Layout.createSequentialGroup()
@@ -128,7 +127,7 @@ public class Main extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -149,10 +148,11 @@ public class Main extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
-         
+
+			@Override
 			public void run() {
                 new Main().setVisible(true);
-               
+
             }
         });
     }

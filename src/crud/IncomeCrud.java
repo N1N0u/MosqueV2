@@ -51,4 +51,19 @@ public class IncomeCrud {
 		con.close();
 		return vector;
 	}
+	public int getLastId() throws SQLException
+	{
+		int id=0;
+		String sql="select MAX(idDonateur) as id from Incomes";
+		Connection con= sqlConnection.conector();
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery(sql);
+		
+		while(rs.next())
+		{
+			id=rs.getInt("id");
+		}
+		con.close();
+		return id;
+	}
 }

@@ -32,7 +32,7 @@ public class Login extends JFrame {
 
         addLoginButton(mainJPanel);
 
-      
+ 
 
         getContentPane().add(mainJPanel);
         this.pack();

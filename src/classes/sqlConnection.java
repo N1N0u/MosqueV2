@@ -11,8 +11,7 @@ public class sqlConnection {
 	{
 		try{
 			Class.forName("org.sqlite.JDBC");
-			Connection con=DriverManager.getConnection("jdbc:sqlite:\\Errors\\Mosque.error");
-			System.out.println("connected");
+			Connection con=DriverManager.getConnection("jdbc:sqlite:Errors//Mosque.error");
 			return con;
 		}catch(Exception e){ JOptionPane.showMessageDialog(null, e); 
 		System.out.println("error");

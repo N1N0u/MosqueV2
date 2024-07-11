@@ -20,7 +20,7 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.Image;
 import java.awt.Rectangle;
 import java.io.File;
-public class PrintInocive {
+public class PrintDonation {
 	
 	public static void PrintBon(Incomes inc) throws DocumentException, MalformedURLException, IOException
 	{		
@@ -28,7 +28,7 @@ public class PrintInocive {
 
         image.scaleToFit(75,75); 
 		Document document=new Document(PageSize.A5, 10, 10, 10, 10);
-		  PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(new File("1.pdf")));
+		  PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(new File("Donations//"+String.valueOf(inc.getIdDonateur()+".pdf"))));
 		 Font f = new Font(Font.FontFamily.TIMES_ROMAN, 10, Font.BOLD);
 		  document.open();
 		  
@@ -82,16 +82,6 @@ public class PrintInocive {
 		  document.close();
 		  
 	}
-	public static void main(String[] args) throws DocumentException, MalformedURLException, IOException {
-		// TODO Auto-generated method stub
-			Incomes incomes=new Incomes();
-			incomes.setDate("2024/05/25");
-			incomes.setDonationString("1000");
-			incomes.setNomI("test");
-			incomes.setPrenomI("testP");
-			incomes.setIdDonateur(5);
-			PrintBon(incomes);
-			System.out.println("ok");
-	}
+	
 
 }
