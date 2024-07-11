@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/KControls-2.0.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/KGradientPanel.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/TimingFramework-0.55.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/datechooser.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/itextpdf-5.5.13.3.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/jna-5.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/jna-platform-5.5.0.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/miglayout-4.0.jar"/>
+	<classpathentry kind="lib" path="/home/n1n0u/Desktop/Java-Projects/MosqueV2/jars/sqlite-jdbc-3.20.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
